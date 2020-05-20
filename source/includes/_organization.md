@@ -9,7 +9,7 @@ const organization = await briq.organization('your-organization').info();
 ```
 
 ```shell
-curl -u briq_api_token "https://www.givebriq.com/v0/organizations/your-organization"
+curl -u briq_api_token "https://api.givebriq.com/v0/organizations/your-organization"
 ```
 
 > Replace `your-organization` with the name of your organization (find it in [your Briq settings](https://www.givebriq.com/app/admin/)).
@@ -27,7 +27,7 @@ This endpoint retrieves information about the current organization.
 
 ### HTTP Request
 
-`GET https://www.givebriq.com/v0/organizations/<organization_name>`
+`GET https://api.givebriq.com/v0/organizations/<organization_name>`
 
 ### URL Parameters
 

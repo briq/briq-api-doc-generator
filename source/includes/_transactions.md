@@ -9,7 +9,7 @@ const transactions = await briq.organization('your-organization').transactions()
 ```
 
 ```shell
-curl -u briq_api_token "https://www.givebriq.com/v0/organizations/your-organization/transactions"
+curl -u briq_api_token "https://api.givebriq.com/v0/organizations/your-organization/transactions"
 ```
 
 > The above command returns JSON structured like this:
@@ -36,7 +36,7 @@ This endpoint lists all the transactions of the organization ([paginated](#pagin
 
 ### HTTP Request
 
-`GET https://www.givebriq.com/v0/organizations/<organization_name>/transactions`
+`GET https://api.givebriq.com/v0/organizations/<organization_name>/transactions`
 
 ### URL Parameters
 
@@ -57,7 +57,7 @@ const transaction = await briq.organization('your-organization').transaction('tr
 ```
 
 ```shell
-curl -u briq_api_token "https://www.givebriq.com/v0/organizations/your-organization/transactions/transaction-id"
+curl -u briq_api_token "https://api.givebriq.com/v0/organizations/your-organization/transactions/transaction-id"
 ```
 
 > Replace `transaction-id` with the id of the transaction
@@ -121,7 +121,7 @@ This endpoint retrieves the details of a transaction.
 
 ### HTTP Request
 
-`GET https://www.givebriq.com/v0/organizations/<organization_name>/transactions/<transaction_id>`
+`GET https://api.givebriq.com/v0/organizations/<organization_name>/transactions/<transaction_id>`
 
 ### URL Parameters
 
@@ -168,7 +168,7 @@ curl -i -u briq_api_token
   --header "Content-Type: application/json" \
   --request POST \
   --data '{ "amount": 2, "comment": "Thanks for your help with the presentation #teamspirit", "from": "alice", "to": "laurent" }' \
-  "https://www.givebriq.com/v0/organizations/your-organization/transactions"
+  "https://api.givebriq.com/v0/organizations/your-organization/transactions"
 ```
 
 > The above command returns an HTTP `201 Created` response and includes a `Location` header with the URL of the created transaction.
@@ -194,7 +194,7 @@ This endpoint creates a transaction.
 
 ### HTTP Request
 
-`POST https://www.givebriq.com/v0/organizations/<organization_name>/transactions`
+`POST https://api.givebriq.com/v0/organizations/<organization_name>/transactions`
 
 ### URL Parameters
 
@@ -226,7 +226,7 @@ const transaction = await briq.organization('your-organization').refundTransacti
 ```
 
 ```shell
-curl -i -u briq_api_token --request DELETE "https://www.givebriq.com/v0/organizations/your-organization/transactions/transaction-id"
+curl -i -u briq_api_token --request DELETE "https://api.givebriq.com/v0/organizations/your-organization/transactions/transaction-id"
 ```
 
 > Replace `transaction-id` with the id of the transaction
@@ -236,7 +236,7 @@ This endpoint reverts a transaction.
 
 ### HTTP Request
 
-`DELETE https://www.givebriq.com/v0/organizations/<organization_name>/transactions/<transaction_id>`
+`DELETE https://api.givebriq.com/v0/organizations/<organization_name>/transactions/<transaction_id>`
 
 ### URL Parameters
 
