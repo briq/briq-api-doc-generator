@@ -9,7 +9,7 @@ const groups = await briq.organization('your-organization').groups();
 ```
 
 ```shell
-curl -u briq_api_token "https://www.givebriq.com/v0/organizations/your-organization/groups"
+curl -u briq_api_token "https://api.givebriq.com/v0/organizations/your-organization/groups"
 ```
 
 > The above command returns JSON structured like this:
@@ -70,7 +70,7 @@ This endpoint lists all the user groups of the organization ([paginated](#pagina
 
 ### HTTP Request
 
-`GET https://www.givebriq.com/v0/organizations/<organization_name>/groups`
+`GET https://api.givebriq.com/v0/organizations/<organization_name>/groups`
 
 ### URL Parameters
 
@@ -91,7 +91,7 @@ const group = await briq.organization('your-organization').group('group-id');
 ```
 
 ```shell
-curl -u briq_api_token "https://www.givebriq.com/v0/organizations/your-organization/groups/group-id"
+curl -u briq_api_token "https://api.givebriq.com/v0/organizations/your-organization/groups/group-id"
 ```
 
 > Replace group-id by the id of the group of which you're getting the details
@@ -151,7 +151,7 @@ This endpoint returns the details for one user groups of the organization.
 
 ### HTTP Request
 
-`GET https://www.givebriq.com/v0/organizations/<organization_name>/groups/<group_id>`
+`GET https://api.givebriq.com/v0/organizations/<organization_name>/groups/<group_id>`
 
 ### URL Parameters
 

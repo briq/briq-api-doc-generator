@@ -18,7 +18,7 @@ const briq = new Briq('briq_api_token');
 
 ```shell
 #Pass the token as the username in a Basic HTTP Authorization header
-curl -u briq_api_token: https://www.givebriq.com/v0/organizations/your-organization
+curl -u briq_api_token: https://api.givebriq.com/v0/organizations/your-organization
 ```
 
 > Make sure to replace `briq_api_token` with your API key.

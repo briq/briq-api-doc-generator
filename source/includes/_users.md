@@ -9,7 +9,7 @@ const users = await briq.organization('your-organization').users();
 ```
 
 ```shell
-curl -u briq_api_token "https://www.givebriq.com/v0/organizations/your-organization/users"
+curl -u briq_api_token "https://api.givebriq.com/v0/organizations/your-organization/users"
 ```
 
 > The above command returns JSON structured like this:
@@ -51,7 +51,7 @@ This endpoint lists all the users of the organization ([paginated](#pagination))
 
 ### HTTP Request
 
-`GET https://www.givebriq.com/v0/organizations/<organization_name>/users`
+`GET https://api.givebriq.com/v0/organizations/<organization_name>/users`
 
 ### URL Parameters
 
@@ -72,7 +72,7 @@ const user = await briq.organization('your-organization').user('user-id');
 ```
 
 ```shell
-curl -u briq_api_token "https://www.givebriq.com/v0/organizations/your-organization/users/user-id"
+curl -u briq_api_token "https://api.givebriq.com/v0/organizations/your-organization/users/user-id"
 ```
 
 > Replace `user-id` with the id of the user
@@ -104,7 +104,7 @@ This endpoint retrieves the details of a user.
 
 ### HTTP Request
 
-`GET https://www.givebriq.com/v0/organizations/<organization_name>/users/<user_id>`
+`GET https://api.givebriq.com/v0/organizations/<organization_name>/users/<user_id>`
 
 ### URL Parameters
 
